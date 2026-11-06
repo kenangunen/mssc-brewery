@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
-@Data                 // getter, setter, equals/hashCode, toString
-@NoArgsConstructor    // new BeerDto(): Jackson JSON'dan nesne kurarken kullanır
-@AllArgsConstructor   // new BeerDto(id, beerName, beerStyle, upc)
-@Builder              // BeerDto.builder()...build(): arka planda @AllArgsConstructor'ı çağırır
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class BeerDto {
     private UUID id;
     private String beerName;
